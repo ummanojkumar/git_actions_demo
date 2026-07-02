@@ -10,11 +10,13 @@ jobs:
          echo "these is example for multiple statementse execution"
   job2:
     runs-on: ubuntu-latest
+    needs: hello_job
     steps:
       - name: job2 setp1
         run: echo "Runing job 2"
   job3:
     runs-on: ubuntu-latest
+    needs: job2
     steps:
       - name: job3 step1
         run: echo "running job 3 step 1 cmd"
