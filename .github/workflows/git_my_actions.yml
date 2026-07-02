@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Intial Step1
         run: |
-         echo "welcome to github actions manoj"
+         echo "welcome to github actions ${{vars.MY_NAME}}"
          echo "these is example for multiple statementse execution"
   job2:
     runs-on: ubuntu-latest
