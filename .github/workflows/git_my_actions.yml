@@ -21,7 +21,7 @@ jobs:
     needs: hello_job
     steps:
       - name: job2 setp1
-        run: echo "Runing job 2"
+        run: echo "Runing job 2 and ps is ${{secrets.MY_PASSWORD}}"
   job3:
     runs-on: ubuntu-latest
     needs: job2
