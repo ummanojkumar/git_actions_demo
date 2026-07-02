@@ -1,5 +1,5 @@
 name: Hello world Pipeline
-on: workflow_dispatch
+on: push
 jobs:
   hello_job:
     runs-on: ubuntu-latest
