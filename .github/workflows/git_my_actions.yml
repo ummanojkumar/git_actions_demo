@@ -1,5 +1,13 @@
 name: Hello world Pipeline
-on: push
+on: 
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+  pull_request:
+    branches:
+      - main
 jobs:
   hello_job:
     runs-on: ubuntu-latest
