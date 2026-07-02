@@ -1,8 +1,10 @@
-name: Hello world
+name: Hello world Pipeline
 on: workflow_dispatch
 jobs:
-  hello:
+  hello_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Intial Setup
-        run: echo "welcome to github actions manoj"
+      - name: Intial Step1
+        run: |
+         echo "welcome to github actions manoj"
+         echo "these is example for multiple statementse execution"
